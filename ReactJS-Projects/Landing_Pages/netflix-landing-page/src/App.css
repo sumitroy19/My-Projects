@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: #000000;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  height: 92px;
+  width: 100vw;
+  z-index: 5;
+  background: linear-gradient(black, transparent);
+}
+
+.header-wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 24px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container{
+  width: 930px;
+  justify-content: start;
+}
+
+.netflix-logo {
+  position: relative;
+  width: 160px;
+}
+
+.buttons-container {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.lang-conatiner {
+  display: flex;
+  height: 32px;
+  width: 124px;
+  padding: 4px 36px;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+#lang {
+  appearance: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  background: transparent;
+}
+
+.signin-button{
+  background-color: rgb(229, 9, 20);
+  color: white;
+  height: 32px;
+  width: 74px;
+  padding: 4px 16px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  border: none;
+  border-radius: 4px;
+}
+
+.signin-button:hover {
+  background-color: rgb(193,17,25);
+  cursor: pointer;
+}
+
+.main-banner-container {
+  height: 700px;
+  overflow: hidden;
+  z-index: 1;
+  background: conic-gradient(black, transparent, black);
+  color: white;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.main-bg-img {
+  position: absolute;
+  z-index: -5;
+  height: 700px;
+  opacity: 0.7;
+  overflow: hidden;
+}
+
+.main-banner-text-wrapper{
+  width: auto;
+  height: 478px;
+  padding: 158px 0 64px 0;
+}
+
+.main-banner-text-container {
+  margin: 122px auto;
+  width: 870px;
+  height: 234px;
+}
+
+.primary-heading {
+  color: white;
+  width: 100%;
+  min-height: 61px;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.h2 {
+  margin-top: 16px;
+}
+
+.secondary-heading {
+  color: white;
+  width: 100%;
+  min-height: 37px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.main-banner-form-container{
+  margin-top: 24px;
+}
+
+.form-heading{
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.form-body {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-started-button{
+  display:flex;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 8px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(229, 9, 20);
+  padding: 12px 24px;
+  border: none;
+  width: 200px;
+  height: 56px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.get-started-button:hover {
+  background-color: rgb(193, 17, 25);
+  cursor: pointer;
+}
+
+.section-break {
+  height: 8px;
+  width: 100%;
+  background-color: #333333;
+}
+
+.secondary-banner {
+  height: auto;
+  min-height: 588px;
+  padding: 72px 0;
+}
+
+.secondary-banner-content-conatiner {
+  margin: 0 auto;
+  max-width: 1184px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-conatiner {
+  max-width: 586px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
