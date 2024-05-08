@@ -62,10 +62,10 @@ function App() {
         <button className="primary-button" onClick={() => addListHandler()}>Add Task</button>
       </div>
       <div className="list-container">
-        <div className="button-container">
+        {/* <div className="button-container">
           <TabButton isSelected={selectedButton === "todo"} onSelect={() => handleSelect("todo")}> ToDo List </TabButton>
           <TabButton isSelected={selectedButton === "completed"} onSelect={() => handleSelect("completed")}> Completed Tasks </TabButton>
-        </div>
+        </div> */}
         <div className="sub-list-conatiner">
           {todoList.map((todo, index) => (
             <>
@@ -75,8 +75,8 @@ function App() {
                   <p>{todo.description}</p>
                 </div>
                 <div className="todo-task-icons">
-                  <MdCheck className="check-icon" onClick={() => handleCheckItem(index)} />
-                  <MdEdit className="edit-icon" />
+                  {/* <MdCheck className="check-icon" onClick={() => handleCheckItem(index)} /> */}
+                  {/* <MdEdit className="edit-icon" /> */}
                   <MdDelete className="delete-icon" onClick={() => handleDeleteItem(index)} />
                 </div>
               </div>
